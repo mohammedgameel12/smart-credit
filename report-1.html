@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credit Report – Jordan A. Rivera (SAMPLE DATA)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Montserrat from Google Fonts; falls back to system fonts if offline. To self-host, replace with an @font-face rule. -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+<div class="wrap">
+<!-- HEADER: report title + generation info -->
+<header class="top">
+  <img src="assets/logo.svg" alt="" width="36" height="36">
+  <div><h1>3-Bureau Credit Report</h1>
+  <p>Jordan A. Rivera · Generated <time datetime="2026-09-30">Sep 30, 2026</time> · <strong>Sample data only</strong></p></div>
+</header>
+<nav aria-label="Report sections"><ul>
+  <li><a href="index.html">All reports</a></li>
+  <li><a href="#scores">Scores</a></li><li><a href="#personal">Personal information</a></li><li><a href="#summary">Account summary</a></li>
+  <li><a href="#tradelines">Trade lines</a></li><li><a href="#inquiries">Inquiries</a></li><li><a href="#public">Public records</a></li><li><a href="#statement">Consumer statement</a></li>
+</ul></nav>
+<main>
+
+<!-- SECTION: SCORES. One .score block per bureau. -->
+<section id="scores"><h2>Credit scores</h2>
+<div class="scores">
+  <div class="score"><span class="bureau">TransUnion</span><span class="num">724</span><small>Good · VantageScore 3.0</small></div>
+  <div class="score"><span class="bureau">Equifax</span><span class="num">718</span><small>Good · VantageScore 3.0</small></div>
+  <div class="score"><span class="bureau">Experian</span><span class="num">731</span><small>Good · VantageScore 3.0</small></div>
+</div></section>
+
+<!-- SECTION: PERSONAL INFORMATION. Add or remove <dt>/<dd> pairs freely. -->
+<section id="personal"><h2>Personal information</h2>
+<dl>
+  <div><dt>Name</dt><dd>Jordan A. Rivera</dd></div>
+  <div><dt>Also known as</dt><dd>Jordan Rivera; J. Alan Rivera</dd></div>
+  <div><dt>Date of birth</dt><dd><time datetime="1988-04-12">Apr 12, 1988</time></dd></div>
+  <div><dt>SSN</dt><dd>XXX-XX-1234</dd></div>
+  <div><dt>Current address</dt><dd>1420 Maple Grove Ln, Springfield, IL 62704</dd></div>
+  <div><dt>Previous address</dt><dd>88 Harbor St, Apt 4B, Chicago, IL 60601</dd></div>
+  <div><dt>Current employer</dt><dd>Northwind Logistics</dd></div>
+  <div><dt>Phone</dt><dd>(555) 010-4472</dd></div>
+</dl></section>
+
+<!-- SECTION: ACCOUNT SUMMARY -->
+<section id="summary"><h2>Account summary</h2>
+<div class="tw"><table><caption>Totals by bureau</caption>
+<thead><tr><th scope="col">Measure</th><th scope="col" class="n">TransUnion</th><th scope="col" class="n">Equifax</th><th scope="col" class="n">Experian</th></tr></thead>
+<tbody>
+<tr><th scope="row">Open accounts</th><td class="n">6</td><td class="n">6</td><td class="n">5</td></tr>
+<tr><th scope="row">Closed accounts</th><td class="n">3</td><td class="n">3</td><td class="n">3</td></tr>
+<tr><th scope="row">Total balance</th><td class="n">$182,340</td><td class="n">$182,340</td><td class="n">$181,900</td></tr>
+<tr><th scope="row">Total monthly payments</th><td class="n">$1,915</td><td class="n">$1,915</td><td class="n">$1,915</td></tr>
+<tr><th scope="row">Credit utilization</th><td class="n">18%</td><td class="n">19%</td><td class="n">17%</td></tr>
+<tr><th scope="row">Delinquent accounts</th><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><th scope="row">Derogatory accounts</th><td class="n">1</td><td class="n">1</td><td class="n">1</td></tr>
+</tbody></table></div></section>
+
+<!-- SECTION: TRADE LINES. Copy one <article class="tradeline"> block per account. -->
+<section id="tradelines"><h2>Trade lines</h2>
+
+<article class="tradeline"><h3>Summit National Bank – Visa Rewards <span class="tag good">Open · Pays as agreed</span></h3>
+<dl>
+  <div><dt>Account #</dt><dd>4147 20XX XXXX 8831</dd></div>
+  <div><dt>Type</dt><dd>Revolving</dd></div>
+  <div><dt>Opened</dt><dd><time datetime="2016-03-01">Mar 2016</time></dd></div>
+  <div><dt>Credit limit</dt><dd>$12,000</dd></div>
+  <div><dt>Balance</dt><dd>$2,140</dd></div>
+  <div><dt>Monthly payment</dt><dd>$45</dd></div>
+  <div><dt>Last reported</dt><dd><time datetime="2026-09-05">Sep 5, 2026</time></dd></div>
+  <div><dt>Payment history (last 12 mo.)</dt><dd>OK OK OK OK OK OK OK OK OK OK OK OK</dd></div>
+</dl></article>
+
+<article class="tradeline"><h3>Lakeshore Mortgage Co. <span class="tag good">Open · Pays as agreed</span></h3>
+<dl>
+  <div><dt>Account #</dt><dd>XXXXXX5520</dd></div>
+  <div><dt>Type</dt><dd>Mortgage, 30 years</dd></div>
+  <div><dt>Opened</dt><dd><time datetime="2019-08-15">Aug 2019</time></dd></div>
+  <div><dt>Original amount</dt><dd>$214,000</dd></div>
+  <div><dt>Balance</dt><dd>$176,900</dd></div>
+  <div><dt>Monthly payment</dt><dd>$1,420</dd></div>
+  <div><dt>Last reported</dt><dd><time datetime="2026-09-01">Sep 1, 2026</time></dd></div>
+  <div><dt>Payment history (last 12 mo.)</dt><dd>OK OK OK OK OK OK OK OK OK OK OK OK</dd></div>
+</dl></article>
+
+<article class="tradeline"><h3>Metro Auto Finance <span class="tag good">Open · Pays as agreed</span></h3>
+<dl>
+  <div><dt>Account #</dt><dd>XXXX7714</dd></div>
+  <div><dt>Type</dt><dd>Auto loan, 60 months</dd></div>
+  <div><dt>Opened</dt><dd><time datetime="2024-02-10">Feb 2024</time></dd></div>
+  <div><dt>Original amount</dt><dd>$21,500</dd></div>
+  <div><dt>Balance</dt><dd>$3,300</dd></div>
+  <div><dt>Monthly payment</dt><dd>$450</dd></div>
+  <div><dt>Last reported</dt><dd><time datetime="2026-09-10">Sep 10, 2026</time></dd></div>
+  <div><dt>Payment history (last 12 mo.)</dt><dd>OK OK OK OK OK OK OK OK OK OK OK OK</dd></div>
+</dl></article>
+
+<article class="tradeline"><h3>Quickfix Medical Collections <span class="tag bad">Collection · Unpaid</span></h3>
+<dl>
+  <div><dt>Account #</dt><dd>XXXX0092</dd></div>
+  <div><dt>Type</dt><dd>Collection agency account</dd></div>
+  <div><dt>Original creditor</dt><dd>Riverside Clinic</dd></div>
+  <div><dt>Opened</dt><dd><time datetime="2023-11-20">Nov 2023</time></dd></div>
+  <div><dt>Balance</dt><dd>$385</dd></div>
+  <div><dt>Last reported</dt><dd><time datetime="2026-08-28">Aug 28, 2026</time></dd></div>
+  <div><dt>Remarks</dt><dd>Placed for collection</dd></div>
+</dl></article>
+</section>
+
+<!-- SECTION: INQUIRIES. Add a <tr> per inquiry. -->
+<section id="inquiries"><h2>Inquiries</h2>
+<div class="tw"><table><caption>Hard inquiries (last 24 months)</caption>
+<thead><tr><th scope="col">Date</th><th scope="col">Company</th><th scope="col">Bureau</th><th scope="col">Type</th></tr></thead>
+<tbody>
+<tr><td><time datetime="2026-06-14">Jun 14, 2026</time></td><td>Summit National Bank</td><td>TransUnion</td><td>Hard</td></tr>
+<tr><td><time datetime="2024-02-08">Feb 8, 2024</time></td><td>Metro Auto Finance</td><td>Equifax, Experian</td><td>Hard</td></tr>
+</tbody></table></div></section>
+
+<!-- SECTION: PUBLIC RECORDS -->
+<section id="public"><h2>Public records</h2>
+<p>No bankruptcies, judgments, or tax liens on file.</p></section>
+
+<!-- SECTION: CONSUMER STATEMENT -->
+<section id="statement"><h2>Consumer statement</h2>
+<p>None on file.</p></section>
+</main>
+<footer><p>Sample data for layout purposes only. Not a real credit report.</p></footer>
+</div>
+</body>
+</html>
